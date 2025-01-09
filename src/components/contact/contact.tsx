@@ -54,9 +54,9 @@ const Contact = () => {
           <article className="contact__option flex flex-col items-center">
             <SiGmail className="contact__option-icon mb-[0.5rem] text-[1.5rem]" />
             <h4>Email</h4>
-            <h5>shrijal.acharya@gmail.com</h5>
+            <h5>rayyanahmed265@yahoo.com</h5>
             <a
-              href="mailto:shrijal.acharya@gmail.com"
+              href="mailto:rayyanahmed265@yahoo.com"
               target="_blank"
               className="inline-block p-[0.5rem] text-[0.9rem]"
             >
@@ -66,9 +66,9 @@ const Contact = () => {
           <article className="contact__option flex flex-col items-center">
             <ImLinkedin2 className="contact__option-icon mb-[0.5rem] text-[1.5rem]" />
             <h4>LinkedIn</h4>
-            <h5>iamshrijal</h5>
+            <h5>Rayyan Ahmed </h5>
             <a
-              href="https://www.linkedin.com/in/iamshrijal/"
+              href="https://www.linkedin.com/in/rayyan-ahmed9477/"
               target="_blank"
               className="inline-block p-[0.5rem] text-[0.9rem]"
               rel="noopener"
@@ -79,7 +79,7 @@ const Contact = () => {
           <article className="contact__option flex flex-col items-center">
             <FaDiscord className="contact__option-icon mb-[0.5rem] text-[1.5rem]" />
             <h4>Discord</h4>
-            <h5>shricodev</h5>
+            <h5>Rayyan Ahmed</h5>
             <a
               href="https://discord.com/users/1082700727220183151"
               target="_blank"

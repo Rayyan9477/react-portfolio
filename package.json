@@ -1,7 +1,7 @@
 {
-  "name": "my-react-portfolio",
-  "private": true,
-  "version": "0.1.0",
+  "name": "rayyan_portfolio",
+  "author": "Rayyan Ahmed rayyanahmed265@yahoo.com",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
