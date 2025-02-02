@@ -20,7 +20,7 @@ const Header = () => {
             }}
           >
             <p className="text-gradient bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] bg-clip-text font-primary text-[2.1rem] font-bold tracking-wider text-transparent">
-              SHRICODEV
+              Rayyan
             </p>
           </a>
           <a href="#contact">

@@ -26,7 +26,7 @@ const HeaderBanner = () => {
             className="mx-auto mb-[1.8rem] w-[330px] flex-1 max-sm:hidden lg:hidden"
           >
             {/* the image for the header banner section */}
-            <img src={myImage} alt="Shrijal Acharya" />
+            <img src={myImage} alt="Rayyan Ahmed" />
           </motion.div>
           <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
@@ -36,7 +36,7 @@ const HeaderBanner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[1] lg:text-[100px]"
             >
-              Shrijal <span>Acharya</span>
+              Rayyan <span>Ahmed</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -99,21 +99,21 @@ const HeaderBanner = () => {
               className="mx-auto flex max-w-max gap-x-6 text-[20px] lg:mx-0"
             >
               <a
-                href="https://github.com/shricodev"
+                href="https://github.com/Rayyan9477"
                 target="_blank"
                 rel="noopener"
               >
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/iamshrijal"
+                href="https://www.linkedin.com/in/rayyan-ahmed9477/"
                 target="_blank"
                 rel="noopener"
               >
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://twitter.com/shricodev"
+                href="https://x.com/Rayyan9477"
                 target="_blank"
                 rel="noopener"
               >
@@ -128,7 +128,7 @@ const HeaderBanner = () => {
             className="hidden w-[550px] max-w-[320px] flex-1 lg:flex lg:max-w-[485px]"
           >
             {/* the image for the header banner section */}
-            <img src={myImage} alt="Shrijal Acharya" />
+            <img src={myImage} alt="Rayyan Ahmed" />
           </motion.div>
         </div>
       </div>
