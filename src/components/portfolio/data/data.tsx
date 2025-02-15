@@ -9,18 +9,26 @@ export const data = [
   },
   {
     id: Math.random(),
-    title: "Contextual Chatbot",
-    subtitle: "A contextual chatbot built with Streamlit for interactive conversations.",
-    github: "https://github.com/Rayyan9477/Contextual-Chatbot",
-    liveUrl: "#",
-  },
-  {
-    id: Math.random(),
     title: "Hate Speech Detection",
     subtitle: "An app to detect hate speech in text, powered by NLP models.",
     github: "https://github.com/Rayyan9477/Hate-Speech-Detection",
     liveUrl: "https://hate-speech-detection-trmipfakvkn6ycvnjkpmqk.streamlit.app/",
   },
+  {
+    id: Math.random(),
+    title: "Claim Guard: Healthcare Claim Integrity and Fraud Detection",
+    subtitle: "A system for healthcare claim integrity and fraud detection.",
+    github: "https://github.com/Rayyan9477/Claim-Guard-Healthcare-Claim-Integrity-and-Fraud-Detection",
+    liveUrl: "https://claims-optimization.streamlit.app/", 
+  },
+  {
+    id: Math.random(),
+    title: "Contextual Chatbot",
+    subtitle: "A contextual chatbot built with Streamlit for interactive conversations.",
+    github: "https://github.com/Rayyan9477/Contextual-Chatbot",
+    liveUrl: "#",
+  },
+  
   {
     id: Math.random(),
     title: "House Price Prediction",
@@ -35,11 +43,5 @@ export const data = [
     github: "https://github.com/Rayyan9477/Chatbot-Genrative-AI",
     liveUrl: "#", 
   },
-  {
-    id: Math.random(),
-    title: "Claim Guard: Healthcare Claim Integrity and Fraud Detection",
-    subtitle: "A system for healthcare claim integrity and fraud detection.",
-    github: "https://github.com/Rayyan9477/Claim-Guard-Healthcare-Claim-Integrity-and-Fraud-Detection",
-    liveUrl: "https://claims-optimization.streamlit.app/", 
-  },
+  
 ];

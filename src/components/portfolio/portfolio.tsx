@@ -35,7 +35,7 @@ const Portfolio = () => {
                 <a href={liveUrl} target="_blank">
                   <button
                     className="btn btn-primary rounded-2xl disabled:cursor-not-allowed disabled:opacity-50 max-md:p-2"
-                    disabled={item.noLive}
+                    disabled={!item.liveUrl || item.liveUrl === "#"}
                   >
                     Live Demo
                   </button>

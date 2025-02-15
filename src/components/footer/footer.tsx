@@ -29,7 +29,7 @@ const Footer = () => {
           <a href="#services">SERVICES</a>
         </li>
         <li>
-          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#portfolio">PROJECTS</a>
         </li>
         {/* TODO: Uncomment this line when I receive testimonials */}
         {/* <li>

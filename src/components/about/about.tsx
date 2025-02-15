@@ -53,10 +53,12 @@ const About = () => {
             </article>
           </div>
           <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem]">
-            AI Engineer with a passion for developing innovative and impactful
-            solutions. Skilled in Python, TensorFlow, PyTorch, and various
-            machine learning techniques. Experienced in building and deploying
-            AI models to solve real-world problems.
+          AI Engineer with extensive expertise in Python, TensorFlow, and PyTorch. 
+          Demonstrated success in optimizing deep learning models, reducing inference time by 25%, and developing production-ready ML pipelines using MLflow. 
+          Proficient in implementing computer vision and NLP solutions, with experience in transformers, CNNs, and state-of-the-art frameworks like Hugging Face. 
+          At Mentorness, improved model accuracy by 18% through advanced feature engineering and ensemble techniques. 
+          During my tenure at Ozibook, successfully deployed and scaled AI solutions that reduced customer service response time by 40%. 
+          Passionate about advancing AI technology and developing scalable solutions that drive business innovation.
           </p>
           <a
             href="#contact"
