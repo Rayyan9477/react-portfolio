@@ -3,8 +3,8 @@ import { portData } from "../../index";
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent Works</h5>
-      <h2>Portfolio</h2>
+      <h5>My Recent Work:</h5>
+      <h2>Projects</h2>
 
       <div className="portfolio__container container grid grid-cols-3 gap-[2.5rem] max-xl:grid-cols-2 max-md:gap-[1.2rem] max-sm:grid-cols-1 max-sm:gap-[1rem]">
         {portData.map((item) => {

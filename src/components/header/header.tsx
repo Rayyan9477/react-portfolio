@@ -23,16 +23,25 @@ const Header = () => {
               Rayyan
             </p>
           </a>
-          <a href="#contact">
-            <button
-              className="btn-header h-[48px] rounded-full px-6 text-sm font-medium text-white"
-              onClick={() => {
-                setActiveNav("#contact");
-              }}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://github.com/Rayyan9477/react-portfolio/blob/main/Resume%202025.pdf"
+              download="Rayyan_Ahmed_Resume.pdf"
+              className="btn-header h-[48px] rounded-full px-6 text-sm font-medium text-white flex items-center justify-center"
             >
-              Work with Me
-            </button>
-          </a>
+              Download Resume
+            </a>
+            <a href="#contact">
+              <button
+                className="btn-header h-[48px] rounded-full px-6 text-sm font-medium text-white"
+                onClick={() => {
+                  setActiveNav("#contact");
+                }}
+              >
+                Work with Me
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </header>

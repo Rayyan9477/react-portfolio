@@ -38,7 +38,6 @@ function App() {
         <Services />
         
 
-        {/* TODO: uncomment the following testimonials after receiving some. */}
         {/* <Testimonials /> */}
         <Contact />
         <Footer />
