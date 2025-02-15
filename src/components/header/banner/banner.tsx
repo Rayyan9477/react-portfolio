@@ -48,14 +48,14 @@ const HeaderBanner = () => {
               <span className="mr-4 text-white">I am a</span>
               <TypeAnimation
                 sequence={[
-                  "Full-Stack Developer",
+                  "AI-ML Engineer",
                   2000,
-                  "Cloud Developer",
+                  "Data Scientist",
                   2000,
-                  "DevOps Engineer",
+                  "Data Analyst",
                   2000,
                 ]}
-                speed={40}
+                speed={30}
                 className="text-[#B809C3]"
                 wrapper="span"
                 repeat={Infinity}
@@ -68,9 +68,9 @@ const HeaderBanner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mx-auto mb-8 max-w-lg lg:mx-0"
             >
-              I contribute to open-source projects, build secure & scalable web
-              apps, and aim to enhance my skills while giving back to the
-              community as a full-stack engineer.
+              AI Engineer skilled in developing and deploying machine learning
+              solutions. Passionate about leveraging AI to drive innovation,
+              solve complex problems and open source projects.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

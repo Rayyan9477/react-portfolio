@@ -34,30 +34,29 @@ const About = () => {
               <div className="about__card h-full flex-1">
                 <FaAward className="about__icon" />
                 <h5>Experience</h5>
-                <small>3+ Years of Experience</small>
+                <small>1+ Years of Experience</small>
               </div>
             </article>
             <article className="flex flex-col">
               <div className="about__card h-full flex-1">
                 <HiOutlineUsers className="about__icon flex justify-center" />
                 <h5>Worked With</h5>
-                <small>20+ Clients Globally</small>
+                <small>5+ Clients Globally</small>
               </div>
             </article>
             <article className="flex flex-col">
               <div className="about__card h-full flex-1">
                 <BsFolderCheck className="about__icon" />
                 <h5>Projects</h5>
-                <small>40+ Finished Projects</small>
+                <small>30+ Finished Projects</small>
               </div>
             </article>
           </div>
           <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem]">
-            As a full-stack engineer, I enjoy contributing to open-source
-            projects and building scalable web applications. Moreover, my basic
-            knowledge of cybersecurity enables me to secure web applications.
-            Through contributing to open-source projects, I strive to enhance my
-            skills while also giving back to the community.
+            AI Engineer with a passion for developing innovative and impactful
+            solutions. Skilled in Python, TensorFlow, PyTorch, and various
+            machine learning techniques. Experienced in building and deploying
+            AI models to solve real-world problems.
           </p>
           <a
             href="#contact"
