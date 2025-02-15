@@ -11,3 +11,4 @@ export { default as Portfolio } from "./components/portfolio/portfolio";
 export { default as Services } from "./components/services/services";
 export { data as testiData } from "./components/testimonials/data/data";
 export { default as Testimonials } from "./components/testimonials/testimonials";
+export { default as ProfessionalExperience } from "./components/experience/ProfessionalExperience";

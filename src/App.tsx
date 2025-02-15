@@ -5,6 +5,7 @@ import {
   // Testimonials,
   Contact,
   Experience,
+  ProfessionalExperience,
   Footer,
   Header,
   HeaderBanner,
@@ -31,6 +32,7 @@ function App() {
         <HeaderBanner />
         <Navbar />
         <About />
+        <ProfessionalExperience />
         <Experience />
         <Services />
         <Portfolio />
