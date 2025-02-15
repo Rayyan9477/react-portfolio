@@ -8,86 +8,90 @@ const Services = () => {
       <div className="services_container container grid grid-cols-3 gap-[3rem] max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-[1.5rem]">
         <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
           <div className="service__head">
-            <h3>FullStack Development</h3>
+            <h3>AI-Powered Solutions</h3>
           </div>
           <ul className="service__list p-[1.8rem] pl-[1.6rem]">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Building custom web applications from scratch</p>
+              <p>Custom AI model development and deployment</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Developing scalable and robust API and integration</p>
+              <p>Generative AI applications (image, text, code)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Creating responsive and friendly user interfaces</p>
+              <p>AI-driven automation and optimization</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Design and implementation of database schema</p>
+              <p>AI-enhanced data analysis and insights</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Automated & manual tests to ensure overall quality</p>
+              <p>AI-powered personalization and recommendations</p>
             </li>
           </ul>
         </article>
         <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
           <div className="service__head">
-            <h3>Cloud Development</h3>
+            <h3>Data Science & Machine Learning</h3>
           </div>
           <ul className="service__list p-[1.8rem] pl-[1.6rem]">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Cloud-native app development & deployment</p>
+              <p>End-to-end machine learning pipeline development</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Serverless Architecture design and implementation</p>
+              <p>Deep learning model design and optimization</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Dockerization and orchestration of applications</p>
+              <p>Natural Language Processing (NLP) solutions</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Managing setup & management of CI / CD pipelines</p>
+              <p>Computer Vision and Image Recognition</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Scaling container management using Kubernetes</p>
+              <p>Time series analysis and forecasting</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Cloud Security and compliance management</p>
+              <p>Recommendation systems and personalization</p>
             </li>
           </ul>
         </article>
         <article className="service hover:cursor-default  hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
           <div className="service__head">
-            <h3>DevOps</h3>
+            <h3>Data Analysis & Insights</h3>
           </div>
           <ul className="service__list p-[1.8rem] pl-[1.6rem]">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Managing setup & management of CI / CD pipelines</p>
+              <p>Data exploration, cleaning, and preprocessing</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>IAC implementation and management techniques</p>
+              <p>Statistical analysis and hypothesis testing</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Monitoring and logging setup and maintenance</p>
+              <p>Data visualization and storytelling</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Cloud Security and compliance management</p>
+              <p>Business intelligence (BI) and reporting</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Deployment Automation, Testing & Release Processes</p>
+              <p>A/B testing and experimentation analysis</p>
+            </li>
+            <li>
+              <BsCheck2All className="service__list-icon" />
+              <p>Data-driven decision making and consulting</p>
             </li>
           </ul>
         </article>

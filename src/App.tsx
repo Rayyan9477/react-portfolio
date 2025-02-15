@@ -32,10 +32,11 @@ function App() {
         <HeaderBanner />
         <Navbar />
         <About />
+        <Portfolio />
         <ProfessionalExperience />
         <Experience />
         <Services />
-        <Portfolio />
+        
 
         {/* TODO: uncomment the following testimonials after receiving some. */}
         {/* <Testimonials /> */}

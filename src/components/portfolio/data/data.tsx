@@ -12,7 +12,7 @@ export const data = [
     title: "Contextual Chatbot",
     subtitle: "A contextual chatbot built with Streamlit for interactive conversations.",
     github: "https://github.com/Rayyan9477/Contextual-Chatbot",
-    liveUrl: "https://rayyan9477-contextual-chatbot.streamlit.app/",
+    liveUrl: "#",
   },
   {
     id: Math.random(),
@@ -27,5 +27,19 @@ export const data = [
     subtitle: "A data-driven property recommendation and house price prediction app.",
     github: "https://github.com/Rayyan9477/Data-Driven-House-Price-Prediction-and-Property-Recommendation-App",
     liveUrl: "#",
+  },
+  {
+    id: Math.random(),
+    title: "Chatbot Generative AI",
+    subtitle: "A generative AI chatbot for interactive conversations.",
+    github: "https://github.com/Rayyan9477/Chatbot-Genrative-AI",
+    liveUrl: "#", 
+  },
+  {
+    id: Math.random(),
+    title: "Claim Guard: Healthcare Claim Integrity and Fraud Detection",
+    subtitle: "A system for healthcare claim integrity and fraud detection.",
+    github: "https://github.com/Rayyan9477/Claim-Guard-Healthcare-Claim-Integrity-and-Fraud-Detection",
+    liveUrl: "https://claims-optimization.streamlit.app/", 
   },
 ];

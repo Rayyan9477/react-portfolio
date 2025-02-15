@@ -84,7 +84,7 @@ const Experience = () => {
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Matplotlib </h4>
+                <h4>Langchain </h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -130,6 +130,14 @@ const Experience = () => {
                 <small className="text-light">Experienced</small>
               </div>
             </article>
+            <article className="experience__details flex gap-[1rem]">
+              <BsPatchCheckFill className="color-primary mt-[6px]" />
+              <div>
+                <h4>Streamlit <img src="https://cdn-icons-png.flaticon.com/512/10779/10779791.png" alt="AI Agents Logo" className="inline-block ml-1 w-4 h-4" /></h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            
           </div>
         </div>
         <div className="experience__cloud max-md:col-span-2 max-md:mx-auto max-md:my-0  max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
@@ -233,6 +241,14 @@ const Experience = () => {
                 <small className="text-light">Experienced</small>
               </div>
             </article>
+            <article className="experience__details flex gap-[1rem]">
+              <BsPatchCheckFill className="color-primary mt-[6px]" />
+              <div>
+                <h4>Adaptability </h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+
           </div>
         </div>
       </div>
