@@ -8,7 +8,6 @@ module.exports = {
     },
     extend: {
       container: {
-        // to center the elemnt horizontally
         center: true,
       },
       transitionDuration: {
