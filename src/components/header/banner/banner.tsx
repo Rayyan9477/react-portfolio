@@ -125,7 +125,7 @@ const HeaderBanner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="hidden w-[550px] max-w-[320px] flex-1 lg:flex lg:max-w-[485px]"
+            className="mx-auto mb-[1.8rem] w-[330px] flex-1"
           >
             {/* the image for the header banner section */}
             <img src={myImage} alt="Rayyan Ahmed" />
