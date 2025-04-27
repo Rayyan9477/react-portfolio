@@ -52,13 +52,21 @@ const About = () => {
               </div>
             </article>
           </div>
-          <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem]">
-          AI Engineer with extensive expertise in Python, TensorFlow, and PyTorch. 
-          Demonstrated success in optimizing deep learning models, reducing inference time by 25%, and developing production-ready ML pipelines using MLflow. 
-          Proficient in implementing computer vision and NLP solutions, with experience in transformers, CNNs, and state-of-the-art frameworks like Hugging Face. 
-          At Mentorness, improved model accuracy by 18% through advanced feature engineering and ensemble techniques. 
-          During my tenure at Ozibook, successfully deployed and scaled AI solutions that reduced customer service response time by 40%. 
-          Passionate about advancing AI technology and developing scalable solutions that drive business innovation.
+          <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem] leading-relaxed">
+            AI Engineer and Data Scientist with expertise in Python, RAG, MCP, and AI-Agents, 
+            specializing in scalable machine learning, computer vision, and NLP solutions.
+            <br /><br />
+            Proven track record of optimizing deep learning models and deploying production-grade 
+            pipelines using frameworks like Hugging Face and advanced transformer architectures.
+            <br /><br />
+            Enhanced model accuracy by 18% at Mentorness through feature engineering and ensemble methods, 
+            and reduced customer service response time by 40% at Ozibook by deploying AI-driven solutions.
+            <br /><br />
+            Currently driving automation initiatives at Nobility MBS, leveraging browser automation, 
+            AI agents, LLMs, and RAG pipelines to streamline medical billing processes,
+            resulting in a 35% reduction in manual workload and a 20% improvement in billing accuracy.
+            <br /><br />
+            Committed to advancing AI innovation, automating complex workflows, and delivering measurable business value.
           </p>
           <a
             href="#contact"

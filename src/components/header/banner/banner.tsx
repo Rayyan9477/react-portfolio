@@ -69,7 +69,7 @@ const HeaderBanner = () => {
               className="mx-auto mb-8 max-w-lg lg:mx-0"
             >
               AI Engineer skilled in developing and deploying machine learning
-              solutions. Passionate about leveraging AI to drive innovation,
+              solutions. Passionate about leveraging AI to drive innovation, automation, 
               solve complex problems and open source projects.
             </motion.p>
             <motion.div
