@@ -25,7 +25,7 @@ const Header = () => {
           </a>
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/Rayyan9477/react-portfolio/blob/main/Rayyan_Ahmed_Resume.pdf"
+              href="https://github.com/Rayyan9477/react-portfolio/blob/main/Rayyan_Ahmed_Resume%202025.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download="Rayyan_Ahmed_Resume.pdf"
