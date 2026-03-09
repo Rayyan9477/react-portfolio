@@ -7,17 +7,24 @@ const ProfessionalExperience = () => {
       <h2>Professional Experience</h2>
       <div className="experience__container container grid grid-cols-1 gap-[2rem] max-sm:gap-[1rem]">
         <div className="experience__item col-span-1 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
-          <h3 className="color-primary mb-[1rem]">Data Scientist</h3>
-          <h4 className="text-light">Nobility MBS | Islamabad, Pakistan</h4>
+          <h3 className="color-primary mb-[1rem]">AI Engineer</h3>
+          <h4 className="text-light">Nobility RCM | Islamabad, Pakistan</h4>
           <p className="text-light">March 2025 – Present</p>
           <ul className="list-disc pl-5 mt-2">
             <li>
-              Automated medical billing workflows using browser automation, AI agents, and LLMs, reducing manual processing by 
-              35% and boosting billing accuracy by 20%.
+              Developed a medical compliance agent that reads clinical notes and auto-extracts ICD-10/CPT/HCPCS billing codes
+              using a fine-tuned Phi-3 model with a 4-agent architecture (LangGraph) and 3-layer anti-hallucination validation
+              — replacing hours of manual medical coding with a single pipeline.
             </li>
             <li>
-              Designed and deployed RAG pipelines and MCP-driven AI solutions to deliver real-time insights, accelerating billing 
-              operations and improving decision-making efficiency by 30%.
+              Built LLM-powered browser automation agents (Playwright + Browser Use) that navigate billing portals, extract
+              claim data, and auto-fill forms — turning repetitive manual workflows into agentic AI processes, cutting
+              processing time by 15% and boosting accuracy by 10%.
+            </li>
+            <li>
+              Designed RAG pipelines with hybrid retrieval (FAISS vectors + BM25 keyword matching) and MCP server integrations
+              to connect LLMs with internal billing systems, enabling natural-language querying across claim databases and
+              accelerating decision-making by 10%.
             </li>
           </ul>
         </div>

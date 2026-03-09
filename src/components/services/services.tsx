@@ -8,90 +8,82 @@ const Services = () => {
       <div className="services_container container grid grid-cols-3 gap-[3rem] max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-[1.5rem]">
         <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
           <div className="service__head">
-            <h3>AI-Powered Solutions</h3>
+            <h3>AI Agents & Automation</h3>
           </div>
           <ul className="service__list p-[1.8rem] pl-[1.6rem]">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Custom AI model development and deployment</p>
+              <p>Multi-agent systems with LangGraph orchestration</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Generative AI applications (image, text, code)</p>
+              <p>LLM-powered browser automation (Playwright + Browser Use)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>AI-driven automation and optimization</p>
+              <p>MCP server development and integrations</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>AI-enhanced data analysis and insights</p>
+              <p>Document extraction with Vision Language Models</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>AI-powered personalization and recommendations</p>
+              <p>End-to-end workflow automation pipelines</p>
             </li>
           </ul>
         </article>
         <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
           <div className="service__head">
-            <h3>Data Science & Machine Learning</h3>
+            <h3>LLMs & RAG Pipelines</h3>
           </div>
           <ul className="service__list p-[1.8rem] pl-[1.6rem]">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>End-to-end machine learning pipeline development</p>
+              <p>RAG with hybrid retrieval (FAISS + BM25)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Deep learning model design and optimization</p>
+              <p>LLM fine-tuning and deployment (Phi-3, Qwen, Llama)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Natural Language Processing (NLP) solutions</p>
+              <p>Anti-hallucination validation systems</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Computer Vision and Image Recognition</p>
+              <p>Local/on-premise AI deployment (CUDA, GGUF)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Time series analysis and forecasting</p>
-            </li>
-            <li>
-              <BsCheck2All className="service__list-icon" />
-              <p>Recommendation systems and personalization</p>
+              <p>Multi-provider LLM routing and orchestration</p>
             </li>
           </ul>
         </article>
         <article className="service hover:cursor-default  hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
           <div className="service__head">
-            <h3>Data Analysis & Insights</h3>
+            <h3>MLOps & Production ML</h3>
           </div>
           <ul className="service__list p-[1.8rem] pl-[1.6rem]">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Data exploration, cleaning, and preprocessing</p>
+              <p>End-to-end ML pipelines with automated retraining</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Statistical analysis and hypothesis testing</p>
+              <p>Model serving with drift detection and monitoring</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Data visualization and storytelling</p>
+              <p>Observability (Prometheus, Grafana, MLflow)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Business intelligence (BI) and reporting</p>
+              <p>Containerized deployments (Docker, CI/CD)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>A/B testing and experimentation analysis</p>
-            </li>
-            <li>
-              <BsCheck2All className="service__list-icon" />
-              <p>Data-driven decision making and consulting</p>
+              <p>NLP, Computer Vision, and deep learning solutions</p>
             </li>
           </ul>
         </article>

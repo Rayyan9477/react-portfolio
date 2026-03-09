@@ -34,7 +34,7 @@ const About = () => {
               <div className="about__card h-full flex-1">
                 <FaAward className="about__icon" />
                 <h5>Experience</h5>
-                <small>1+ Years of Experience</small>
+                <small>2+ Years of Experience</small>
               </div>
             </article>
             <article className="flex flex-col">
@@ -53,20 +53,20 @@ const About = () => {
             </article>
           </div>
           <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem] leading-relaxed">
-            AI Engineer and Data Scientist with expertise in Python, RAG, MCP, and AI-Agents, 
-            specializing in scalable machine learning, computer vision, and NLP solutions.
+            AI Engineer crafting production-ready ML solutions with RAG, MCP, and AI Agents.
+            I build multi-agent systems (LangGraph), fine-tune LLMs (Phi-3, Qwen), and deploy
+            end-to-end pipelines that run locally on CUDA — no patient data leaves the system.
             <br /><br />
-            Proven track record of optimizing deep learning models and deploying production-grade 
-            pipelines using frameworks like Hugging Face and advanced transformer architectures.
+            At Nobility RCM, I built a medical compliance agent with a 4-agent architecture that
+            auto-extracts ICD-10/CPT/HCPCS billing codes from clinical notes, LLM-powered browser
+            automation agents that navigate billing portals, and RAG pipelines with hybrid retrieval
+            (FAISS + BM25) for natural-language querying across claim databases.
             <br /><br />
-            Enhanced model accuracy by 18% at Mentorness through feature engineering and ensemble methods, 
-            and reduced customer service response time by 40% at Ozibook by deploying AI-driven solutions.
+            My open-source work spans enterprise document extraction with Vision Language Models,
+            full-stack AI job automation platforms, production MLOps pipelines with drift detection,
+            and mental health AI companions with multi-agent orchestration — 53+ repos on GitHub.
             <br /><br />
-            Currently driving automation initiatives at Nobility MBS, leveraging browser automation, 
-            AI agents, LLMs, and RAG pipelines to streamline medical billing processes,
-            resulting in a 35% reduction in manual workload and a 20% improvement in billing accuracy.
-            <br /><br />
-            Committed to advancing AI innovation, automating complex workflows, and delivering measurable business value.
+            I care about shipping AI that works in production, not just in notebooks.
           </p>
           <a
             href="#contact"

@@ -50,154 +50,139 @@ const Experience = () => {
         </div>
         <div className="experience__tools max-md:col-span-2 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
           <h3 className="color-primary mb-[2rem] text-center">
-            Tools and Frameworks
+            AI & LLM Stack
           </h3>
           <div className="experience__content grid grid-cols-2 gap-y-[1rem] max-md:p-[1rem] max-xsm:grid-cols-1">
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Machine Learning </h4>
+                <h4>LangChain / LangGraph</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Deep Learning  </h4>
+                <h4>RAG (FAISS + BM25)</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Pandas <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" alt="Pandas Logo" className="inline-block ml-1 w-4 h-4" /></h4>
+                <h4>LLM Fine-tuning</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Numpy <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="Numpy Logo" className="inline-block ml-1 w-4 h-4" /></h4>
+                <h4>AI Agents / MCP</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Langchain </h4>
+                <h4>Hugging Face</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>TensorFlow </h4>
+                <h4>Vision Language Models</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Scikit Learn <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit Learn Logo" className="inline-block ml-1 w-4 h-4" /></h4>
+                <h4>PyTorch</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Pytorch </h4>
+                <h4>TensorFlow</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>LLM Fine-tuning <img src="https://cdn-icons-png.flaticon.com/512/10779/10779791.png" alt="LLM Logo" className="inline-block ml-1 w-4 h-4" /></h4>
+                <h4>Scikit-Learn</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>RAG <img src="https://cdn-icons-png.flaticon.com/512/10779/10779791.png" alt="RAG Logo" className="inline-block ml-1 w-4 h-4" /></h4>
+                <h4>OpenCV</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-            <article className="experience__details flex gap-[1rem]">
-              <BsPatchCheckFill className="color-primary mt-[6px]" />
-              <div>
-                <h4>AI Agents <img src="https://cdn-icons-png.flaticon.com/512/10779/10779791.png" alt="AI Agents Logo" className="inline-block ml-1 w-4 h-4" /></h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details flex gap-[1rem]">
-              <BsPatchCheckFill className="color-primary mt-[6px]" />
-              <div>
-                <h4>Streamlit <img src="https://cdn-icons-png.flaticon.com/512/10779/10779791.png" alt="AI Agents Logo" className="inline-block ml-1 w-4 h-4" /></h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            
           </div>
         </div>
         <div className="experience__cloud max-md:col-span-2 max-md:mx-auto max-md:my-0  max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
           <h3 className="color-primary mb-[2rem] text-center">
-            Databases and Cloud Services
+            Infrastructure & DevOps
           </h3>
           <div className="experience__content grid grid-cols-2 gap-y-[1rem] max-md:p-[1rem] max-xsm:grid-cols-1">
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>MySQL </h4>
+                <h4>Docker / Compose</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>MS SQL Server <img src="https://img.icons8.com/color/48/000000/sql.png" alt="MS SQL Server Logo" className="inline-block ml-1 w-4 h-4" /></h4>
+                <h4>FastAPI / Celery</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Mongo DB </h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-             <article className="experience__details flex gap-[1rem]">
-              <BsPatchCheckFill className="color-primary mt-[6px]" />
-              <div>
-                <h4>ChromaDB <img src="https://avatars.githubusercontent.com/u/114152494?s=200&v=4" alt="ChromaDB Logo" className="inline-block ml-1 w-4 h-4" /></h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-             <article className="experience__details flex gap-[1rem]">
-              <BsPatchCheckFill className="color-primary mt-[6px]" />
-              <div>
-                <h4>FAISS <img src="https://avatars.githubusercontent.com/u/48947242?s=200&v=4" alt="FAISS Logo" className="inline-block ml-1 w-4 h-4" /></h4>
-                <small className="text-light">Intermediate</small>
+                <h4>FAISS / ChromaDB</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>AWS <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" className="inline-block ml-1 w-4 h-4" /></h4>
-                <small className="text-light">Intermediate</small>
+                <h4>MLflow / DVC</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Azure <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Azure Logo" className="inline-block ml-1 w-4 h-4" /></h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Airflow</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>GCP </h4>
+                <h4>Prometheus / Grafana</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__details flex gap-[1rem]">
+              <BsPatchCheckFill className="color-primary mt-[6px]" />
+              <div>
+                <h4>PostgreSQL / Redis</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__details flex gap-[1rem]">
+              <BsPatchCheckFill className="color-primary mt-[6px]" />
+              <div>
+                <h4>AWS / Azure / GCP</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>

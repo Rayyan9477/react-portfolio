@@ -45,14 +45,16 @@ const HeaderBanner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] font-semibold uppercase leading-[1] lg:text-[60px]"
             >
-              <span className="mr-4 text-white">I am a</span>
+              <span className="mr-4 text-white">I am </span>
               <TypeAnimation
                 sequence={[
-                  "AI-ML Engineer",
+                  "AI Engineer",
                   2000,
-                  "Data Scientist",
+                  "LLM & RAG Developer",
                   2000,
-                  "Data Analyst",
+                  "AI Agent Builder",
+                  2000,
+                  "MLOps Engineer",
                   2000,
                 ]}
                 speed={30}
@@ -68,9 +70,9 @@ const HeaderBanner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mx-auto mb-8 max-w-lg lg:mx-0"
             >
-              AI Engineer skilled in developing and deploying machine learning
-              solutions. Passionate about leveraging AI to drive innovation, automation, 
-              solve complex problems and open source projects.
+              AI Engineer building production-ready ML systems with RAG, MCP,
+              and multi-agent architectures. I ship LLM pipelines, fine-tune
+              models, and automate complex workflows end-to-end.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
