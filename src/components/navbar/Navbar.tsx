@@ -1,11 +1,10 @@
-import { AppContext } from "../../App";
-import { useContext } from "react";
-import { HiOutlineHome } from "react-icons/hi";
-import { AiOutlineUser } from "react-icons/ai";
-import { RiBook2Line } from "react-icons/ri";
-import { RiServiceLine } from "react-icons/ri";
+import { useContext, useEffect } from "react";
+import { AiOutlineMessage, AiOutlineUser } from "react-icons/ai";
 import { BsPersonWorkspace } from "react-icons/bs";
-import { AiOutlineMessage } from "react-icons/ai";
+import { HiOutlineCode, HiOutlineHome } from "react-icons/hi";
+import { MdOutlineWorkOutline } from "react-icons/md";
+import { RiServiceLine } from "react-icons/ri";
+import { AppContext } from "../../App";
 
 const Navbar = () => {
   const context = useContext(AppContext);
@@ -15,73 +14,107 @@ const Navbar = () => {
     setActiveNav: React.Dispatch<React.SetStateAction<string>>;
   };
 
+  useEffect(() => {
+    const sections = [
+      { id: "home", nav: "#" },
+      { id: "about", nav: "#about" },
+      { id: "professional-experience", nav: "#professional-experience" },
+      { id: "portfolio", nav: "#portfolio" },
+      { id: "experience", nav: "#experience" },
+      { id: "services", nav: "#services" },
+      { id: "contact", nav: "#contact" },
+    ];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const match = sections.find((s) => s.id === entry.target.id);
+            if (match) {
+              setActiveNav(match.nav);
+            }
+          }
+        });
+      },
+      {
+        rootMargin: "-25% 0px -40% 0px",
+        threshold: 0.1,
+      }
+    );
+
+    sections.forEach((s) => {
+      const el = document.getElementById(s.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [setActiveNav]);
+
   return (
-    <nav className="align-center container fixed bottom-5 left-0 right-0 z-[9999] flex w-max gap-[3px] rounded-full bg-black bg-opacity-[0.25] p-3 px-[1.2] py-[0.2] backdrop-blur-lg">
+    <nav
+      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[9999] flex items-center gap-1.5 rounded-full border border-white/10 bg-surface/85 px-3 py-2 backdrop-blur-xl shadow-[0_10px_35px_rgba(0,0,0,0.6)]"
+      aria-label="Quick Navigation"
+    >
       <a
         href="#"
-        onClick={() => {
-          setActiveNav("#");
-        }}
+        onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
-        rel="noopener"
+        aria-label="Home"
+        title="Home"
       >
         <HiOutlineHome />
       </a>
       <a
         href="#about"
-        onClick={() => {
-          setActiveNav("#about");
-        }}
+        onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
-        rel="noopener"
+        aria-label="About Me"
+        title="About Me"
       >
         <AiOutlineUser />
       </a>
       <a
-        href="#experience"
-        onClick={() => {
-          setActiveNav("#experience");
-        }}
-        className={
-          activeNav === "#experience"
-            ? "active max-[300px]:hidden"
-            : "max-[300px]:hidden"
-        }
-        rel="noopener"
+        href="#professional-experience"
+        onClick={() => setActiveNav("#professional-experience")}
+        className={activeNav === "#professional-experience" ? "active" : ""}
+        aria-label="Work Experience"
+        title="Work Experience"
       >
-        <RiBook2Line />
-      </a>
-      <a
-        href="#services"
-        onClick={() => {
-          setActiveNav("#services");
-        }}
-        className={activeNav === "#services" ? "active" : ""}
-        rel="noopener"
-      >
-        <RiServiceLine />
+        <MdOutlineWorkOutline />
       </a>
       <a
         href="#portfolio"
-        onClick={() => {
-          setActiveNav("#portfolio");
-        }}
+        onClick={() => setActiveNav("#portfolio")}
         className={activeNav === "#portfolio" ? "active" : ""}
-        rel="noopener"
+        aria-label="Projects & Systems"
+        title="Projects & Systems"
       >
         <BsPersonWorkspace />
       </a>
       <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
+        aria-label="Skills & Stack"
+        title="Skills & Stack"
+      >
+        <HiOutlineCode />
+      </a>
+      <a
+        href="#services"
+        onClick={() => setActiveNav("#services")}
+        className={activeNav === "#services" ? "active" : ""}
+        aria-label="Services"
+        title="Services"
+      >
+        <RiServiceLine />
+      </a>
+      <a
         href="#contact"
-        onClick={() => {
-          setActiveNav("#contact");
-        }}
-        className={
-          activeNav === "#contact"
-            ? "active max-[300px]:hidden"
-            : "max-[300px]:hidden"
-        }
-        rel="noopener"
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
+        aria-label="Contact"
+        title="Contact"
       >
         <AiOutlineMessage />
       </a>
