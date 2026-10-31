@@ -1,128 +1,144 @@
 import { BsPatchCheckFill } from "react-icons/bs";
+import { HiSparkles } from "react-icons/hi";
+import { MdOutlineWork } from "react-icons/md";
 
 const ProfessionalExperience = () => {
   return (
     <section id="professional-experience">
-      <h5>What I have Done</h5>
+      <h5>What I Have Built in Production</h5>
       <h2>Professional Experience</h2>
-      <div className="experience__container container grid grid-cols-1 gap-[2rem] max-sm:gap-[1rem]">
-        <div className="experience__item col-span-1 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
-          <h3 className="color-primary mb-[1rem]">AI Engineer</h3>
-          <h4 className="text-light">Nobility RCM | Islamabad, Pakistan</h4>
-          <p className="text-light">March 2025 – Present</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              Developed a medical compliance agent that reads clinical notes and auto-extracts ICD-10/CPT/HCPCS billing codes
-              using a fine-tuned Phi-3 model with a 4-agent architecture (LangGraph) and 3-layer anti-hallucination validation
-              — replacing hours of manual medical coding with a single pipeline.
-            </li>
-            <li>
-              Built LLM-powered browser automation agents (Playwright + Browser Use) that navigate billing portals, extract
-              claim data, and auto-fill forms — turning repetitive manual workflows into agentic AI processes, cutting
-              processing time by 15% and boosting accuracy by 10%.
-            </li>
-            <li>
-              Designed RAG pipelines with hybrid retrieval (FAISS vectors + BM25 keyword matching) and MCP server integrations
-              to connect LLMs with internal billing systems, enabling natural-language querying across claim databases and
-              accelerating decision-making by 10%.
-            </li>
-          </ul>
-        </div>
-        
-        <div className="experience__item col-span-1 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
-          <h3 className="color-primary mb-[1rem]">Data Analyst</h3>
-          <h4 className="text-light">Ozibook | Remote, Bangalore, India</h4>
-          <p className="text-light">October 2024 – Present</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              Optimized SQL Queries and Interactive Dashboards: Enhanced SQL
-              query performance by 20%, enabling faster data processing, and
-              developed Power BI dashboards, improving data visualization and
-              decision-making processes by 15%.
-            </li>
-            <li>
-              Predictive Analytics Implementation: Built machine learning models
-              using Python libraries such as Pandas, NumPy, Matplotlib, Scrapy,
-              and Scikit-Learn, achieving an 18% increase in predictive
-              accuracy.
-            </li>
-          </ul>
+
+      <div className="container space-y-6">
+        {/* Competition Spotlight Banner */}
+        <div className="relative overflow-hidden rounded-2xl border border-violet-500/30 bg-gradient-to-r from-violet-950/40 via-surface to-cyan-950/30 p-5 backdrop-blur-xl">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-start gap-3.5">
+              <div className="rounded-xl bg-violet-500/20 p-2.5 text-violet-400 mt-0.5">
+                <HiSparkles className="text-xl" />
+              </div>
+              <div>
+                <span className="inline-block font-mono text-[11px] uppercase tracking-wider text-violet-300 font-semibold">
+                  Featured Competition Win
+                </span>
+                <h3 className="text-lg font-bold text-white">
+                  Third Prize &bull; Qwen-Image LoRA Training Competition
+                </h3>
+                <p className="text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
+                  Trained and published a 1.7 GB LoRA on 12,000+ multimodal images across 40 categories on a single consumer GPU, optimizing PEFT/QLoRA hyperparameters and loss convergence.
+                </p>
+              </div>
+            </div>
+            <div className="flex-shrink-0 self-start sm:self-center">
+              <span className="font-mono text-xs rounded-full border border-violet-400/40 bg-violet-500/10 px-3 py-1.5 text-violet-300">
+                Single-GPU PEFT
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div className="experience__item col-span-1 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
-          <h3 className="color-primary mb-[1rem]">
-            AI Engineer (Machine Learning)
-          </h3>
-          <h4 className="text-light">
-            Digital Empowerment Networks | Islamabad, Pakistan
-          </h4>
-          <p className="text-light">July – September 2024</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              Advanced Data Processing: Conducted data cleaning, preprocessing,
-              and visualization to prepare large datasets for analysis,
-              enhancing data quality by 30%.
-            </li>
-            <li>
-              Machine Learning Models: Implemented concept such as k-means
-              clustering, logistic regression, and NLP tokenizing to build
-              predictive models, improving fraud detection accuracy by 22% and
-              reducing false positives by 99.05%.
-            </li>
-          </ul>
-        </div>
+        {/* Experience Items */}
+        <div className="space-y-5">
+          {/* Nobility RCM */}
+          <div className="rounded-2xl border border-white/10 bg-surface/80 p-6 md:p-8 backdrop-blur-xl transition-all hover:border-cyan-500/40">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-4">
+              <div>
+                <div className="flex items-center gap-2">
+                  <MdOutlineWork className="text-cyan-400 text-lg" />
+                  <h3 className="text-xl font-bold text-cyan-400">AI Engineer</h3>
+                </div>
+                <h4 className="text-slate-200 font-medium mt-1">Nobility RCM &bull; Healthcare & Revenue Cycle Management</h4>
+              </div>
+              <div className="text-left md:text-right">
+                <span className="inline-block rounded-full bg-cyan-950/60 border border-cyan-800/50 px-3 py-1 font-mono text-xs text-cyan-300">
+                  Mar 2025 – Present
+                </span>
+                <p className="text-xs text-slate-400 mt-1">Islamabad, Pakistan</p>
+              </div>
+            </div>
+            <ul className="list-disc pl-5 space-y-2 text-sm text-slate-300 leading-relaxed">
+              <li>
+                <strong className="text-white">Healthcare & RCM GenAI Systems:</strong> Design and deliver production Generative AI systems for healthcare and RCM, including agentic financial analytics (<span className="text-cyan-300">Prism</span>), clinical medical coding (<span className="text-cyan-300">MedCodex</span>), grounded question answering, document intelligence, and browser automation.
+              </li>
+              <li>
+                <strong className="text-white">Multi-Agent LangGraph & MCP:</strong> Architect LangGraph and MCP workflows with agent state, tool calling, structured outputs, hybrid retrieval (BM25 + FAISS), retry logic, evaluation gates, and human review; connect them to governed billing and financial data through FastAPI.
+              </li>
+              <li>
+                <strong className="text-white">Cloud & Local Inference:</strong> Engineer cloud (AWS Bedrock) and local (vLLM / CUDA) inference paths with prompt/context engineering, provider-aware routing, PHI-aware controls, provenance, and deterministic calculations for reliable, auditable financial outputs.
+              </li>
+            </ul>
+          </div>
 
-        <div className="experience__item col-span-1 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
-          <h3 className="color-primary mb-[1rem]">Data Analyst Intern</h3>
-          <h4 className="text-light">Mentorness | Remote, Pakistan</h4>
-          <p className="text-light">May 2024 – June 2024</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              Power BI Dashboards, Presentation Skills: Developed interactive
-              Power BI dashboards, enhancing data visualization and
-              decision-making resulting in a 20% boost in report efficiency and
-              15% improvement in decision-making accuracy.
-            </li>
-            <li>
-              SQL Data Management: Optimized SQL queries for data extraction
-              and analysis, enhancing data retrieval speed by 25% and ensuring
-              accurate data handling.
-            </li>
-          </ul>
-        </div>
+          {/* OZIBOOK */}
+          <div className="rounded-2xl border border-white/10 bg-surface/80 p-6 md:p-8 backdrop-blur-xl transition-all hover:border-cyan-500/40">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-4">
+              <div>
+                <div className="flex items-center gap-2">
+                  <BsPatchCheckFill className="text-cyan-400 text-base" />
+                  <h3 className="text-xl font-bold text-cyan-400">Data Analyst</h3>
+                </div>
+                <h4 className="text-slate-200 font-medium mt-1">OZIBOOK Tech Solutions</h4>
+              </div>
+              <div className="text-left md:text-right">
+                <span className="inline-block rounded-full bg-slate-900 border border-white/10 px-3 py-1 font-mono text-xs text-slate-300">
+                  Oct 2024 – Jan 2025
+                </span>
+                <p className="text-xs text-slate-400 mt-1">Remote &bull; India</p>
+              </div>
+            </div>
+            <ul className="list-disc pl-5 space-y-2 text-sm text-slate-300 leading-relaxed">
+              <li>
+                Built preprocessing, schema-validation, class-balancing, and feature-engineering pipelines for claim-anomaly modeling.
+              </li>
+              <li>
+                Benchmarked Random Forest, XGBoost, and Logistic Regression to support production model selection, optimizing tabular classification accuracy.
+              </li>
+            </ul>
+          </div>
 
-        <div className="experience__item col-span-1 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
-          <h3 className="color-primary mb-[1rem]">Open Source Contributor</h3>
-          <h4 className="text-light">Google Summer of Code (GSOC) | Remote</h4>
-          <p className="text-light">April 2024 – August 2024</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              Developed and contributed code to open-source projects, implementing new features and resolving critical bugs that improved software performance by 25% and enhanced user experience.
-            </li>
-            <li>
-              Collaborated with global developers using Git workflow, participating in code reviews and agile development processes while adhering to project standards and deadlines.
-            </li>
-            <li>
-              Gained expertise in software development best practices, continuous integration, and technical documentation in a distributed team environment.
-            </li>
-          </ul>
-        </div>
+          {/* Digital Empowerment Networks */}
+          <div className="rounded-2xl border border-white/10 bg-surface/80 p-6 md:p-8 backdrop-blur-xl transition-all hover:border-cyan-500/40">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-white/5 pb-4 mb-4">
+              <div>
+                <div className="flex items-center gap-2">
+                  <BsPatchCheckFill className="text-cyan-400 text-base" />
+                  <h3 className="text-xl font-bold text-cyan-400">Data Scientist (Machine Learning)</h3>
+                </div>
+                <h4 className="text-slate-200 font-medium mt-1">Digital Empowerment Networks</h4>
+              </div>
+              <div className="text-left md:text-right">
+                <span className="inline-block rounded-full bg-slate-900 border border-white/10 px-3 py-1 font-mono text-xs text-slate-300">
+                  Jul – Sep 2024
+                </span>
+                <p className="text-xs text-slate-400 mt-1">Islamabad, Pakistan</p>
+              </div>
+            </div>
+            <ul className="list-disc pl-5 space-y-2 text-sm text-slate-300 leading-relaxed">
+              <li>
+                Developed and tuned business-KPI forecasting models with Pandas, NumPy, and scikit-learn, improving repeatability through structured feature pipelines, model evaluation, and hyperparameter tuning.
+              </li>
+              <li>
+                Implemented clustering and NLP tokenization pipelines, reducing false positives by 99.05% on anomaly detection benchmarks.
+              </li>
+            </ul>
+          </div>
 
-        <div className="experience__item col-span-1 max-md:mx-auto max-md:my-0 max-md:w-[85%] max-md:p-[2rem] max-sm:w-[100%] max-sm:px-[1rem] max-sm:py-[2rem]">
-          <h3 className="color-primary mb-[1rem]">Lab Demonstrator</h3>
-          <h4 className="text-light">National University of Computer and Emerging Sciences | Pakistan</h4>
-          <p className="text-light">August 2023 – January 2024</p>
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              Facilitated hands-on programming sessions for 50+ undergraduate students, resulting in a 30% improvement in practical programming skills and a 25% increase in assignment completion rates.
-            </li>
-            <li>
-              Designed and evaluated comprehensive assessments including practical tests, programming tasks, and technical examinations that effectively measured student proficiency in key programming concepts.
-            </li>
-            <li>
-              Provided one-on-one mentoring for complex programming concepts including arrays, pointers, object-oriented programming, and data science fundamentals, helping students overcome technical challenges and improve debugging skills.
-            </li>
-          </ul>
+          {/* GSoC & FAST NUCES */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="rounded-2xl border border-white/10 bg-surface/80 p-5 backdrop-blur-xl">
+              <h4 className="font-bold text-white text-base">Open Source Contributor</h4>
+              <p className="text-xs font-mono text-cyan-400 mt-0.5">Google Summer of Code (GSOC) &bull; Apr – Aug 2024</p>
+              <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+                Contributed bug fixes and performance enhancements (+25% execution speed) across open-source repositories using distributed Git workflows.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-surface/80 p-5 backdrop-blur-xl">
+              <h4 className="font-bold text-white text-base">Lab Demonstrator & BS Software Engineering</h4>
+              <p className="text-xs font-mono text-cyan-400 mt-0.5">FAST NUCES Islamabad &bull; 2022 – 2026</p>
+              <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+                Facilitated hands-on programming labs for 50+ undergraduate students across data structures, OOP, and machine learning fundamentals.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

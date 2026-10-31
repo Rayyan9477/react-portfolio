@@ -3,87 +3,92 @@ import { BsCheck2All } from "react-icons/bs";
 const Services = () => {
   return (
     <section id="services">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
-      <div className="services_container container grid grid-cols-3 gap-[3rem] max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-[1.5rem]">
-        <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
+      <h5>Enterprise AI Capabilities</h5>
+      <h2>Services & Solutions</h2>
+      <div className="services__container container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Service 1 */}
+        <article className="service group rounded-2xl border border-white/10 bg-surface/85 backdrop-blur-xl transition-all duration-300 hover:border-cyan-500/40 hover:-translate-y-1">
           <div className="service__head">
-            <h3>AI Agents & Automation</h3>
+            <h3>AI Agents & Orchestration</h3>
           </div>
-          <ul className="service__list p-[1.8rem] pl-[1.6rem]">
+          <ul className="service__list p-6 space-y-3">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Multi-agent systems with LangGraph orchestration</p>
+              <p>Multi-agent architectures with LangGraph state machines & routing</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>LLM-powered browser automation (Playwright + Browser Use)</p>
+              <p>Autonomous browser agents (Browser Use + Playwright automation)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>MCP server development and integrations</p>
+              <p>Custom Model Context Protocol (MCP) server development</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Document extraction with Vision Language Models</p>
+              <p>Human-in-the-loop review, retry logic & escalation gates</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>End-to-end workflow automation pipelines</p>
+              <p>End-to-end task automation across complex enterprise portals</p>
             </li>
           </ul>
         </article>
-        <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
+
+        {/* Service 2 */}
+        <article className="service group rounded-2xl border border-white/10 bg-surface/85 backdrop-blur-xl transition-all duration-300 hover:border-cyan-500/40 hover:-translate-y-1">
           <div className="service__head">
-            <h3>LLMs & RAG Pipelines</h3>
+            <h3>Enterprise RAG & Fine-Tuning</h3>
           </div>
-          <ul className="service__list p-[1.8rem] pl-[1.6rem]">
+          <ul className="service__list p-6 space-y-3">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>RAG with hybrid retrieval (FAISS + BM25)</p>
+              <p>Hybrid retrieval pipelines (FAISS vector + BM25 keyword matching)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>LLM fine-tuning and deployment (Phi-3, Qwen, Llama)</p>
+              <p>Single-GPU LoRA/QLoRA and PEFT model fine-tuning (Qwen, Phi-3)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Anti-hallucination validation systems</p>
+              <p>3-layer anti-hallucination validation & grounding pipelines</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Local/on-premise AI deployment (CUDA, GGUF)</p>
+              <p>Local on-premise inference deployments (vLLM, CUDA, GGUF)</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Multi-provider LLM routing and orchestration</p>
+              <p>Provider-agnostic routing via LiteLLM & AWS Bedrock</p>
             </li>
           </ul>
         </article>
-        <article className="service hover:cursor-default  hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
+
+        {/* Service 3 */}
+        <article className="service group rounded-2xl border border-white/10 bg-surface/85 backdrop-blur-xl transition-all duration-300 hover:border-cyan-500/40 hover:-translate-y-1">
           <div className="service__head">
-            <h3>MLOps & Production ML</h3>
+            <h3>LLMOps & Observability</h3>
           </div>
-          <ul className="service__list p-[1.8rem] pl-[1.6rem]">
+          <ul className="service__list p-6 space-y-3">
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>End-to-end ML pipelines with automated retraining</p>
+              <p>Production ML/LLM pipelines with automated data flows</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Model serving with drift detection and monitoring</p>
+              <p>Real-time model serving with drift detection & monitoring</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Observability (Prometheus, Grafana, MLflow)</p>
+              <p>AI Observability with Langfuse, PostHog, Prometheus & Grafana</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>Containerized deployments (Docker, CI/CD)</p>
+              <p>Containerized deployments with Docker, Kubernetes & CI/CD</p>
             </li>
             <li>
               <BsCheck2All className="service__list-icon" />
-              <p>NLP, Computer Vision, and deep learning solutions</p>
+              <p>Strict PHI & enterprise security compliance controls</p>
             </li>
           </ul>
         </article>

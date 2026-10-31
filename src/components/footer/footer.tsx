@@ -1,68 +1,76 @@
-import { FiTwitter } from "react-icons/fi";
-import { FiInstagram } from "react-icons/fi";
-import { GrLinkedinOption } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
-
+import { FiTwitter } from "react-icons/fi";
+import { GrLinkedinOption } from "react-icons/gr";
+import { IoFlame } from "react-icons/io5";
 
 const Footer = () => {
   return (
     <footer id="footer">
       <a
         href="#"
-        className="footer__logo mb-[2rem] text-[2rem] hover:text-[#ebecf1]"
+        className="footer__logo mb-4 inline-block font-primary text-2xl font-bold tracking-wider text-white hover:text-cyan-400"
       >
-        Rayyan Ahmed
+        Rayyan<span className="text-cyan-400">.ai</span>
       </a>
 
-      <ul className="permalinks max-sm:gap-1.5rem mb-[3rem] mt-0 flex flex-wrap justify-center gap-[2rem] max-sm:flex-col">
+      <div className="mb-6 flex items-center justify-center gap-2 font-mono text-xs text-amber-400">
+        <IoFlame />
+        <span>460+ Days GitHub Streak &bull; 53+ Open Source Repositories</span>
+      </div>
+
+      <ul className="permalinks mb-8 mt-0 flex flex-wrap justify-center gap-6 font-mono text-xs uppercase tracking-wider text-slate-400 max-sm:flex-col max-sm:gap-3">
         <li>
-          <a href="#">HOME</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a href="#about">ABOUT</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#experience">EXPERIENCE</a>
+          <a href="#professional-experience">Experience</a>
         </li>
         <li>
-          <a href="#services">SERVICES</a>
+          <a href="#portfolio">Systems</a>
         </li>
         <li>
-          <a href="#portfolio">PROJECTS</a>
+          <a href="#experience">Skills</a>
         </li>
-        {/* TODO: Uncomment this line when I receive testimonials */}
-        {/* <li>
-          <a href="#testimonials">TESTIMONIALS</a>
-        </li> */}
         <li>
-          <a href="#contact">CONTACT</a>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
-      <div className="footer__socials mb-[2rem] flex justify-center gap-[1rem] max-sm:mb-[2.2rem]">
-        <a href="" target="_blank" rel="noopener">
+      <div className="footer__socials mb-8 flex justify-center gap-3">
+        <a
+          href="https://x.com/Rayyan9477"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+        >
           <FiTwitter />
         </a>
         <a
           href="https://www.linkedin.com/in/rayyan-ahmed9477/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
           <GrLinkedinOption />
         </a>
-
         <a
           href="https://github.com/Rayyan9477"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
         >
           <FaGithub />
         </a>
       </div>
 
-      <div className="footer__copyright mb-[4rem]">
-        <small>&copy; Rayyan Ahmed. All rights reserved!</small>
+      <div className="footer__copyright mb-6 font-mono text-xs text-slate-500">
+        <small>&copy; {new Date().getFullYear()} Rayyan Ahmed. All rights reserved. Deployed with production AI standards.</small>
       </div>
     </footer>
   );

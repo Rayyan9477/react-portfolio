@@ -1,38 +1,87 @@
-// Projects
-export const data = [
+export interface ProjectItem {
+  id: string;
+  title: string;
+  badge?: string;
+  category: "all" | "agentic" | "healthcare" | "mlops";
+  tags: string[];
+  subtitle: string;
+  github?: string;
+  liveUrl?: string;
+  isPrivate?: boolean;
+}
+
+export const data: ProjectItem[] = [
   {
-    id: Math.random(),
-    title: "Medical Compliance Agent",
+    id: "medcodex-rcm",
+    title: "MedCodex: Multi-Agent Clinical Coding",
+    badge: "40% Efficiency Boost",
+    category: "healthcare",
+    tags: ["LangGraph", "Multi-Agent", "ICD-10/CPT", "AI Observability", "vLLM"],
     subtitle:
-      "4-agent LangGraph system that reads clinical notes via a local VLM, extracts ICD-10/CPT/HCPCS codes with confidence scores, and validates through a 3-layer anti-hallucination pipeline. Fine-tuned Phi-3 published on Hugging Face. Runs 100% locally on CUDA.",
-    github: "https://github.com/Rayyan9477/Medical-Compliance-Agent",
+      "Enterprise LangGraph multi-agent workflow extracting clinical context, proposing ICD-10-CM/CPT/HCPCS codes, and validating through a 3-layer anti-hallucination pipeline. Shifted medical coding teams from manual drafting to reviewing AI outputs with PHI masking and full audit trails.",
+    isPrivate: true,
+    github: "https://github.com/Rayyan9477",
     liveUrl: "#",
   },
   {
-    id: Math.random(),
-    title: "Agentic Document Extraction",
+    id: "prism-finance",
+    title: "Prism: Financial Intelligence Platform",
+    badge: "Enterprise Production",
+    category: "agentic",
+    tags: ["Agentic RAG", "MCP", "SQL-Grounded LLMs", "Evaluation & Guardrails"],
     subtitle:
-      "Enterprise zero-shot extraction engine using Qwen3-VL 8B that auto-detects document types, generates adaptive schemas, handles multi-record pages with cross-page dedup, and learns from corrections via Mem0 persistent memory. 4x speedup with parallel processing.",
-    github:
-      "https://github.com/Rayyan9477/Agentic-Document-Extraction-PDF",
+      "Agentic GenAI platform for Finance using Text-to-SQL grounded RAG and tool calling, reducing recurring team analysis from hours to minutes. Separated deterministic calculations from LLM reasoning, adding capability-aware routing, provenance, and evaluation gates.",
+    isPrivate: true,
+    github: "https://github.com/Rayyan9477",
     liveUrl: "#",
   },
   {
-    id: Math.random(),
-    title: "AutoApply AI",
+    id: "auto-apply-ai",
+    title: "Auto Apply AI: Computer-Use Agent",
+    badge: "Open Source",
+    category: "agentic",
+    tags: ["Computer-Use Agents", "Browser Use", "Playwright", "LiteLLM", "Redis"],
     subtitle:
-      "Full-stack AI platform (FastAPI + React + Redis) that discovers jobs, scores resumes via FAISS vector matching, tailors documents with LLM, and submits applications through Playwright browser automation. Human-in-the-loop review, ATS scoring, multi-provider LLM routing via LiteLLM.",
+      "Autonomous browser-use agent platform for job discovery, semantic resume-job matching, ATS scoring, and human-approved application workflows. Orchestrates Browser Use & Playwright with LiteLLM/Bedrock routing, FAISS retrieval, Redis queues, and human 2FA handoff.",
+    isPrivate: false,
     github:
       "https://github.com/Rayyan9477/AutoApply-AI-Agentic-Browser-Automation-for-Job-Search",
     liveUrl: "#",
   },
   {
-    id: Math.random(),
-    title: "MLOps Pipeline — USD Volatility Forecasting",
+    id: "agentic-doc-extraction",
+    title: "Agentic Document Extraction Engine",
+    badge: "Multimodal VLM",
+    category: "agentic",
+    tags: ["Qwen2.5-VL", "Multimodal", "Adaptive Schema", "Mem0 Memory"],
     subtitle:
-      "Production ML system: Airflow auto-retraining every 2 hours, FastAPI serving with real-time drift detection, Prometheus/Grafana observability (13 alert rules), MLflow tracking, DVC versioning, 8-service Docker Compose stack, 5 CI/CD workflows, 37 unit tests.",
-    github:
-      "https://github.com/Rayyan9477/MLOps-Pipeline-for-USD-Forecasting",
+      "Zero-shot extraction engine utilizing Qwen-VL that auto-detects complex document structures, generates adaptive schemas, handles multi-record pages with cross-page deduplication, and learns from corrections via Mem0 persistent memory with 4x parallel speedup.",
+    isPrivate: false,
+    github: "https://github.com/Rayyan9477/Agentic-Document-Extraction-PDF",
+    liveUrl: "#",
+  },
+  {
+    id: "linkedin-mcp-server",
+    title: "LinkedIn MCP Server",
+    badge: "Model Context Protocol",
+    category: "mlops",
+    tags: ["MCP Protocol", "Claude Desktop", "FastAPI", "Tool Calling"],
+    subtitle:
+      "Production Model Context Protocol (MCP) server enabling frontier LLM assistants to programmatically inspect job postings, analyze professional profiles, and execute contextual agentic tasks.",
+    isPrivate: false,
+    github: "https://github.com/Rayyan9477/linkedin_mcp",
+    liveUrl: "#",
+  },
+  {
+    id: "mlops-usd-pipeline",
+    title: "MLOps Pipeline — USD Volatility",
+    badge: "Production MLOps",
+    category: "mlops",
+    tags: ["Airflow", "FastAPI", "Prometheus", "Grafana", "MLflow", "Docker"],
+    subtitle:
+      "Production ML system with Airflow auto-retraining every 2 hours, FastAPI inference with real-time drift detection, Prometheus/Grafana observability (13 alert rules), MLflow registry, 8-service Docker Compose stack, and 37 automated tests.",
+    isPrivate: false,
+    github: "https://github.com/Rayyan9477/MLOps-Pipeline-for-USD-Forecasting",
     liveUrl: "#",
   },
 ];
