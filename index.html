@@ -1,33 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07090E" />
     <meta
       name="description"
-      content="AI Engineer building production-ready ML systems with RAG, MCP, and multi-agent architectures.
-      Specializing in LLM fine-tuning, LangGraph pipelines, Vision Language Models, browser automation agents,
-      and MLOps. Browse my portfolio to see agentic AI systems, medical compliance agents, and production ML pipelines."
+      content="Generative AI Engineer specializing in LangGraph multi-agent orchestration, agentic RAG, MCP servers, and local LLM fine-tuning. Production systems deployed across healthcare (RCM) and finance."
     />
+    <meta name="keywords" content="Rayyan Ahmed, Generative AI Engineer, AI Agents, LangGraph, MCP, RAG, Fine-tuning, Healthcare AI, MLOps, Nobility RCM" />
+    <meta name="author" content="Rayyan Ahmed" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/Rayyan9477" />
+    <meta property="og:title" content="Rayyan Ahmed | Generative AI & Agentic Systems Engineer" />
+    <meta property="og:description" content="Generative AI Engineer building production-ready agentic systems, LangGraph workflows, and RAG pipelines across Healthcare, Finance, and Browser Automation." />
+    <meta property="og:image" content="/favicon.ico" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://x.com/Rayyan9477" />
+    <meta property="twitter:title" content="Rayyan Ahmed | Generative AI & Agentic Systems Engineer" />
+    <meta property="twitter:description" content="Generative AI Engineer building production-ready agentic systems, LangGraph workflows, and RAG pipelines." />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rayyan Ahmed",
+        "jobTitle": "Generative AI Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Nobility RCM"
+        },
+        "url": "https://github.com/Rayyan9477",
+        "sameAs": [
+          "https://github.com/Rayyan9477",
+          "https://www.linkedin.com/in/rayyan-ahmed9477/",
+          "https://x.com/Rayyan9477"
+        ],
+        "knowsAbout": [
+          "Generative AI",
+          "Agentic Systems",
+          "LangGraph",
+          "Model Context Protocol (MCP)",
+          "Retrieval-Augmented Generation (RAG)",
+          "Large Language Models",
+          "Healthcare AI",
+          "MLOps"
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- preloading the img to speed up loading -->
-    <link
-      rel="preload"
-      fetchpriority="high"
-      as="image"
-      href="./src/assets/my-logo.webp"
-      type="image/webp"
-    />
-    <title>Rayyan Ahmed | AI Engineer</title>
+    <title>Rayyan Ahmed | Generative AI & Agentic Systems Engineer</title>
   </head>
 
-  <body class="leading-[1.7]">
+  <body class="bg-void text-slate-100 font-primary leading-[1.7] selection:bg-cyan-500 selection:text-black">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

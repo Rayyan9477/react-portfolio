@@ -1,96 +1,90 @@
-# Rayyan Ahmed's Portfolio Website
+# Rayyan Ahmed &bull; Generative AI Engineer Portfolio
 
-## Overview
+[![GitHub Streak](https://img.shields.io/badge/GitHub_Streak-460%2B_Days-amber.svg?style=flat&logo=github)](https://github.com/Rayyan9477)
+[![Award](https://img.shields.io/badge/Competition-3rd_Prize_Qwen_LoRA-violet.svg?style=flat)](https://github.com/Rayyan9477)
+[![Status](https://img.shields.io/badge/Enterprise-Nobility_RCM-cyan.svg?style=flat)](https://github.com/Rayyan9477)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This is my personal portfolio website, built with React and Tailwind CSS. It showcases my skills and experience as an AI Engineer, Data Scientist, and Data Analyst, along with a selection of my projects.
+> **Generative AI Engineer** with 2+ years of production experience turning operational business problems into end-to-end agentic AI solutions. Specialized in LangGraph multi-agent orchestration, Model Context Protocol (MCP), agentic RAG, and local/cloud model fine-tuning and inference (vLLM, CUDA, AWS Bedrock).
 
-## Technologies Used
+---
 
-*   **React:** A JavaScript library for building user interfaces.
-*   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
-*   **React Icons:** A library of customizable icons for React.
-*   **React Hot Toast:** For displaying toast notifications.
+## 🏆 Featured Highlights
 
-## Features
+* **🔥 460+ Days Consecutive GitHub Streak**: 53+ public repositories covering agentic workflows, MCP servers, and MLOps.
+* **🥉 3rd Prize — Global Qwen-Image LoRA Training Competition**: Single-GPU PEFT/QLoRA training of a 1.7 GB LoRA model across 12,000+ multimodal images and 40 categories.
+* **⚡ 40% Clinical Coding Speedup**: Built **MedCodex** at Nobility RCM, transitioning medical coders from manual typing to reviewing 4-agent LangGraph proposals with 3-layer anti-hallucination validation.
 
-*   **Responsive Design:** The website is designed to be responsive and accessible on various devices.
-*   **Skills Showcase:** Highlights my skills in programming languages, tools, frameworks, databases, and cloud services.
-*   **Project Portfolio:** Showcases a selection of my projects with links to GitHub repositories and live demos (where available).
-*   **Services Offered:** Outlines the services I offer as an AI Engineer, Data Scientist, and Data Analyst.
-*   **Downloadable Resume:** Provides a link to download my resume in PDF format.
-*   **Contact Form:** Allows visitors to contact me directly through the website.
+---
 
-## Project List
+## 🚀 Flagship Production Systems
 
-*   **OCR Image to Text:** A Streamlit app that extracts text from images using OCR.
-    *   [GitHub Repository](https://github.com/Rayyan9477/OCR-Image-to-text)
-    *   [Live Demo](https://rayyan9477-ocr-image-to-text.streamlit.app/)
-*   **Contextual Chatbot:** A contextual chatbot built with Streamlit for interactive conversations.
-    *   [GitHub Repository](https://github.com/Rayyan9477/Contextual-Chatbot)
-    *   [Live Demo](https://rayyan9477-contextual-chatbot.streamlit.app/)
-*   **Hate Speech Detection:** An app to detect hate speech in text, powered by NLP models.
-    *   [GitHub Repository](https://github.com/Rayyan9477/Hate-Speech-Detection)
-    *   [Live Demo](https://hate-speech-detection-trmipfakvkn6ycvnjkpmqk.streamlit.app/)
-*   **House Price Prediction:** A data-driven property recommendation and house price prediction app.
-    *   [GitHub Repository](https://github.com/Rayyan9477/Data-Driven-House-Price-Prediction-and-Property-Recommendation-App)
-*   **Chatbot Generative AI:** A generative AI chatbot for interactive conversations.
-    *   [GitHub Repository](https://github.com/Rayyan9477/Chatbot-Genrative-AI)
-*   **Claim Guard: Healthcare Claim Integrity and Fraud Detection:** A system for healthcare claim integrity and fraud detection.
-    *   [GitHub Repository](https://github.com/Rayyan9477/Claim-Guard-Healthcare-Claim-Integrity-and-Fraud-Detection)
+* **[MedCodex (Private / Enterprise)](https://github.com/Rayyan9477)**:
+  * 4-agent LangGraph workflow extracting clinical context, proposing ICD-10-CM/CPT/HCPCS codes, and validating against medical databases.
+  * 3-layer anti-hallucination validation with retry and escalation paths, PHI masking, and audit trails.
+* **[Prism (Private / Enterprise)](https://github.com/Rayyan9477)**:
+  * Agentic GenAI platform for finance using Text-to-SQL grounded RAG with tool calling.
+  * Separates deterministic calculation from LLM reasoning, ensuring zero mathematical hallucination with evaluation gates.
+* **[Auto Apply AI](https://github.com/Rayyan9477/AutoApply-AI-Agentic-Browser-Automation-for-Job-Search)**:
+  * Autonomous browser-use agent platform for job discovery, semantic resume-job matching, ATS scoring, and human-approved workflows.
+  * Orchestrated with Playwright, Browser Use, LiteLLM, Redis queues, and human 2FA/CAPTCHA handoff.
+* **[Agentic Document Extraction Engine](https://github.com/Rayyan9477/Agentic-Document-Extraction-PDF)**:
+  * Zero-shot multimodal extraction using Qwen2.5/3-VL with adaptive schemas, cross-page deduplication, and Mem0 persistent memory.
+* **[LinkedIn MCP Server](https://github.com/Rayyan9477/linkedin_mcp)**:
+  * Model Context Protocol (MCP) server enabling frontier LLMs (Claude, Cursor) to programmatically search jobs and analyze profiles.
+* **[MLOps Pipeline — USD Volatility Forecasting](https://github.com/Rayyan9477/MLOps-Pipeline-for-USD-Forecasting)**:
+  * Airflow retraining every 2 hours, FastAPI inference with real-time drift detection, Prometheus/Grafana (13 alert rules), and Docker Compose.
 
-## Getting Started
+---
 
-1.  **Clone the repository:**
+## 🛠️ Technical Stack
 
-    ```bash
-    git clone https://github.com/Rayyan9477/my-react-portfolio-main.git
-    ```
+* **Agentic AI & Orchestration**: LangGraph, LangChain, Model Context Protocol (MCP), Tool/Function Calling, Structured Outputs (Pydantic), Context Engineering.
+* **RAG & Safety**: Hybrid Retrieval (BM25 + FAISS), Grounding, Guardrails, Provenance, Human-in-the-Loop, LLM Evaluation.
+* **Models & Fine-Tuning**: LoRA/QLoRA, PEFT, vLLM, llama.cpp, LiteLLM, AWS Bedrock, PyTorch, Transformers, Vision-Language Models (VLMs).
+* **LLMOps & Backend**: Python, TypeScript, FastAPI, Redis, Celery, Docker, Kubernetes, Langfuse, PostHog, Prometheus, Grafana, PostgreSQL.
+* **Frontend**: React 18, TypeScript, Tailwind CSS, Framer Motion, Vite.
 
-2.  **Navigate to the project directory:**
+---
 
-    ```bash
-    cd my-react-portfolio-main
-    ```
+## 💻 Local Development Setup
 
-3.  **Install dependencies:**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Rayyan9477/react-portfolio.git
+   cd react-portfolio
+   ```
 
-    ```bash
-    npm install
-    ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-4.  **Start the development server:**
+3. **Configure Environment Variables**:
+   Copy `.env.example` to `.env` and fill in your EmailJS credentials:
+   ```bash
+   cp .env.example .env
+   ```
 
-    ```bash
-    npm run dev
-    ```
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
 
-    This will start the development server and open the website in your default browser.
+5. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
-## Deployment
+---
 
-The project is deployed using [Vercel](https://vercel.com/)
+## 📬 Contact & Links
 
-## Customization
+* **Email**: [rayyanahmed265@yahoo.com](mailto:rayyanahmed265@yahoo.com)
+* **LinkedIn**: [linkedin.com/in/rayyan-ahmed9477](https://www.linkedin.com/in/rayyan-ahmed9477/)
+* **X (Twitter)**: [x.com/Rayyan9477](https://x.com/Rayyan9477)
+* **GitHub**: [github.com/Rayyan9477](https://github.com/Rayyan9477)
 
-*   **Update Content:** Modify the content in the [components](http://_vscodecontentref_/1) directory to personalize the website with your own information, skills, projects, and services.
-*   **Styling:** Customize the styling by modifying the Tailwind CSS classes in the components.
-*   **Resume:** Replace the `public/resume.pdf` file with your own resume.
-*   **Images:** Update the images in the `public/images` directory with your own images.
+---
 
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-Rayyan Ahmed
-
-[rayyanahmed265@yahoo.com](mailto:rayyanahmed265@yahoo.com)
-
-[LinkedIn](http://www.linkedin.com/in/rayyan-ahmed9477)
-
-[GitHub](https://github.com/Rayyan9477)
+&copy; 2026 Rayyan Ahmed. All rights reserved.
