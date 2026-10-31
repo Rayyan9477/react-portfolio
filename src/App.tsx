@@ -1,8 +1,8 @@
 import { createContext, useState } from "react";
 import { Toaster } from "react-hot-toast";
+import AIAssistant from "./components/assistant/AIAssistant";
 import {
   About,
-  // Testimonials,
   Contact,
   Experience,
   ProfessionalExperience,
@@ -19,7 +19,6 @@ interface AppContextValue {
   setActiveNav: React.Dispatch<React.SetStateAction<string>>;
 }
 
-// using createContext to prevent from passing {activeNav, setActiveNav} to each child component.
 export const AppContext = createContext<AppContextValue | null>(null);
 
 function App() {
@@ -27,23 +26,33 @@ function App() {
 
   return (
     <AppContext.Provider value={{ activeNav, setActiveNav }}>
-      <div className="overflow-hidden bg-site bg-cover bg-no-repeat">
+      <div className="relative min-h-screen overflow-hidden bg-void bg-site bg-cover bg-no-repeat text-slate-100">
         <Header />
         <HeaderBanner />
         <Navbar />
         <About />
-        <Portfolio />
         <ProfessionalExperience />
+        <Portfolio />
         <Experience />
         <Services />
-        
-
-        {/* <Testimonials /> */}
         <Contact />
         <Footer />
 
-        {/* Toast provider for react-hot-toast */}
-        <Toaster />
+        {/* Interactive AI Agent Recruiter Assistant */}
+        <AIAssistant />
+
+        {/* Toast provider */}
+        <Toaster
+          toastOptions={{
+            style: {
+              background: "#0D111C",
+              color: "#F8FAFC",
+              border: "1px solid rgba(56, 189, 248, 0.3)",
+              fontFamily: "JetBrains Mono, monospace",
+              fontSize: "12px",
+            },
+          }}
+        />
       </div>
     </AppContext.Provider>
   );
