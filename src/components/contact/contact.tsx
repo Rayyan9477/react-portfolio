@@ -1,149 +1,166 @@
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
-import toast from "react-hot-toast";
-import { FaDiscord } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { ImLinkedin2 } from "react-icons/im";
+import { FormEvent, useRef, useState } from "react";
+import { FiArrowUpRight } from "react-icons/fi";
+import { profile } from "../../data/profile";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({
+export default function Contact() {
+  const [fields, setFields] = useState({
     fullName: "",
     email: "",
     message: "",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const notify = (message: string) => toast(message);
-
-  function handleChange(
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [event.target.name]: event.target.value,
-    }));
-  }
-
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICEID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATEID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLICKEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      // Fallback for development if env vars are missing
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setFormData({ fullName: "", email: "", message: "" });
-        notify("Thank you! Your message has been noted.");
-      }, 600);
+  const [state, setState] = useState<
+    "idle" | "sending" | "draft" | "success" | "error"
+  >("idle");
+  const sending = useRef(false);
+  const service = import.meta.env.VITE_EMAILJS_SERVICEID;
+  const template = import.meta.env.VITE_EMAILJS_TEMPLATEID;
+  const key = import.meta.env.VITE_EMAILJS_PUBLICKEY;
+  const configured = [service, template, key].every(
+    (value) => value && !value.startsWith("your_"),
+  );
+  const draft = `mailto:${profile.email}?subject=${encodeURIComponent(`Portfolio inquiry from ${fields.fullName}`)}&body=${encodeURIComponent(`Name: ${fields.fullName}\nEmail: ${fields.email}\n\n${fields.message}`)}`;
+  async function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (sending.current) return;
+    if (!configured) {
+      setState("draft");
       return;
     }
-
-    emailjs
-      .sendForm(serviceId, templateId, e.currentTarget, publicKey)
-      .then(() => {
-        setIsSubmitting(false);
-        setFormData({ fullName: "", email: "", message: "" });
-        notify("The message was sent successfully!");
-      })
-      .catch(() => {
-        setIsSubmitting(false);
-        notify("Your message could not be sent. Please email me directly.");
-      });
+    sending.current = true;
+    setState("sending");
+    try {
+      await emailjs.send(service, template, { ...fields }, { publicKey: key });
+      setFields({ fullName: "", email: "", message: "" });
+      setState("success");
+    } catch {
+      setState("error");
+    } finally {
+      sending.current = false;
+    }
   }
-
   return (
-    <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
-
-      <div className="contact__container container grid grid-cols-1 lg:grid-cols-[35%_60%] gap-8">
-        {/* Contact Options */}
-        <div className="contact__options flex flex-col gap-4">
-          <article className="contact__option flex flex-col items-center">
-            <HiOutlineMail className="contact__option-icon mb-2 text-2xl text-cyan-400" />
-            <h4 className="text-sm font-bold text-white">Direct Email</h4>
-            <h5 className="font-mono text-xs text-slate-300 select-all">rayyanahmed265@yahoo.com</h5>
-            <a
-              href="mailto:rayyanahmed265@yahoo.com"
-              className="mt-2 text-xs font-mono text-cyan-400 hover:text-cyan-300"
-            >
-              Send an email &rarr;
-            </a>
-          </article>
-
-          <article className="contact__option flex flex-col items-center">
-            <ImLinkedin2 className="contact__option-icon mb-2 text-2xl text-sky-400" />
-            <h4 className="text-sm font-bold text-white">LinkedIn</h4>
-            <h5 className="font-mono text-xs text-slate-300">Rayyan Ahmed</h5>
-            <a
-              href="https://www.linkedin.com/in/rayyan-ahmed9477/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 text-xs font-mono text-cyan-400 hover:text-cyan-300"
-            >
-              Connect on LinkedIn &rarr;
-            </a>
-          </article>
-
-          <article className="contact__option flex flex-col items-center">
-            <FaDiscord className="contact__option-icon mb-2 text-2xl text-indigo-400" />
-            <h4 className="text-sm font-bold text-white">Discord</h4>
-            <h5 className="font-mono text-xs text-slate-300">Rayyan Ahmed</h5>
-            <a
-              href="https://discord.com/users/1082700727220183151"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 text-xs font-mono text-cyan-400 hover:text-cyan-300"
-            >
-              Chat on Discord &rarr;
-            </a>
-          </article>
-        </div>
-
-        {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <input
-            className="w-full rounded-xl px-5 py-3.5 text-sm autofill:bg-transparent"
-            type="text"
-            value={formData.fullName}
-            name="fullName"
-            placeholder="Your Full Name"
-            onChange={handleChange}
-            required
-          />
-          <input
-            className="w-full rounded-xl px-5 py-3.5 text-sm autofill:bg-transparent"
-            type="email"
-            value={formData.email}
-            name="email"
-            placeholder="Your Email Address"
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            className="w-full rounded-xl px-5 py-3.5 text-sm autofill:bg-transparent"
-            name="message"
-            value={formData.message}
-            rows={7}
-            placeholder="Tell me about your AI project, architecture needs, or role..."
-            onChange={handleChange}
-            required
-          />
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="btn btn-primary self-start disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </button>
-        </form>
+    <section
+      id="contact"
+      className="section shell contact"
+      aria-labelledby="contact-title"
+    >
+      <div className="contact-copy">
+        <p className="eyebrow">05 / Get in touch</p>
+        <h2 id="contact-title">
+          Have a problem
+          <br />
+          worth solving?
+        </h2>
+        <p>
+          Let’s talk about an AI engineering role, a system you’re building, or
+          a workflow that could work better.
+        </p>
+        <a className="contact-email" href={`mailto:${profile.email}`}>
+          {profile.email} <FiArrowUpRight aria-hidden="true" />
+        </a>
+        <a
+          className="text-link"
+          href={profile.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect on LinkedIn <FiArrowUpRight aria-hidden="true" />
+        </a>
       </div>
+      <form
+        onSubmit={submit}
+        aria-label="Contact Rayyan"
+        aria-describedby="contact-note"
+      >
+        <div>
+          <label htmlFor="full-name">Full name</label>
+          <input
+            id="full-name"
+            name="fullName"
+            autoComplete="name"
+            required
+            maxLength={120}
+            value={fields.fullName}
+            onChange={(e) => {
+              setFields({ ...fields, fullName: e.target.value });
+              setState("idle");
+            }}
+            disabled={state === "sending"}
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            maxLength={254}
+            value={fields.email}
+            onChange={(e) => {
+              setFields({ ...fields, email: e.target.value });
+              setState("idle");
+            }}
+            disabled={state === "sending"}
+          />
+        </div>
+        <div>
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows={5}
+            required
+            maxLength={5000}
+            value={fields.message}
+            onChange={(e) => {
+              setFields({ ...fields, message: e.target.value });
+              setState("idle");
+            }}
+            disabled={state === "sending"}
+          />
+        </div>
+        <p id="contact-note" className="form-note">
+          {configured
+            ? "Your message is delivered through EmailJS. Please avoid sharing sensitive information."
+            : "Prepare a draft, then send it from your own email app. Your message stays here until you leave this page."}
+        </p>
+        <button
+          className="button primary"
+          type="submit"
+          disabled={state === "sending"}
+        >
+          {state === "sending"
+            ? "Sending…"
+            : configured
+              ? "Send message"
+              : "Prepare email draft"}
+          <FiArrowUpRight aria-hidden="true" />
+        </button>
+        {state === "error" ? (
+          <p role="alert" className="form-feedback error">
+            Your message could not be sent. Your text has been kept. Please
+            retry or <a href={draft}>send through your email app</a>.
+          </p>
+        ) : (
+          <p role="status" className="form-feedback">
+            {state === "success" ? (
+              "Message sent. Thank you for reaching out."
+            ) : state === "draft" ? (
+              <>
+                Your message is ready. <a href={draft}>Open email draft</a> and
+                send it from your email app.
+              </>
+            ) : state === "sending" ? (
+              "Sending your message…"
+            ) : (
+              ""
+            )}
+          </p>
+        )}
+      </form>
     </section>
   );
-};
-
-export default Contact;
+}
